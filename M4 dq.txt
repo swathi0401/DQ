@@ -1,0 +1,192 @@
+Q. Why do we need to conduct unit testing in isolation ?
+1). Use a real database
+2). Use expensive or a difficult resource
+3). Use mock objects
+4). To avoid the use of expensive resources
+Solution :
+option [3,4] are correct
+Q. Fill in the blank :
+
+The following advantages belong to _________.
+
+1. You get the ability to test code that is not yet written.
+2. They help to write focused tests that will test only a single method.
+3. They are helpful when the application integrates with expensive external resources.
+1). Parameterized tests
+2). SuiteClass
+3). Unit testing
+4). Mock Object
+Solution :
+option [4] is correct
+Q. What is the use of @Test annotation? 
+1). Used to signify a method is a test method
+2). Cleanup task after each test is executed
+3). To ignore the test method
+4). Execute task before start of tests
+Solution :
+option [1] is correct
+Q. Which of the following annotations are used to run test suite?
+1). @With and @TestSuite
+2). @RunWith and @Suite
+3). @Run and @Suite
+4). @TestWith and @RunSuite
+Solution :
+option [2] is correct
+Q. Which of the following statements are true about JUnit?
+1). It is not possbile to follow TDD with Junit
+2). In JUnit4.x, Annotations are available  for initialization and 
+cleanup : @Before, @After
+
+3). Junit framework is not open source therefore it is expensive.
+4). In JUnit 4.x, you have to import org.junit.*
+
+Solution :
+option [2,4] are correct
+Q. Which of the following are the assertion methods in Junit?
+1). assertContentEquals()
+2). assertEquals()
+3). Fail()
+4). assertNVL()
+Solution :
+option [2,3] are correct
+Q. @Test(expected=IOException.class)
+     public void foo() throws IOException
+     {
+          try
+          {
+           System.out.format("%d",1/0);
+          }
+          catch(ArithmeticException e)
+          {
+           throw e;
+          }
+     }
+
+Select the correct option for this code.
+1). Test passes successfully
+2). Test Fail
+3). Test passes successfully if annotation is replaced 
+by @Test(expected=ArithmeticException.class)
+4). Test would be correct if it would have been catch(IOException e)
+Solution :
+option [3] is correct
+Q. Which of the following annotation allows to run the same test with different data?
+1). Annotate class with @RunWith(Parame.class)
+2). Annotate class with @RunWith(Parameterized.class)
+3). Annotate class with @RunWith(Parameter.class)
+4). Annotate class with @RunWith(MultipleParam.class)
+Solution :
+option [2] is correct
+Q. Fill in the blank :
+
+A _______ comprises of multiple tests and is a convenient way to group the tests, which are related.
+1). testclass
+2). testcase
+3). testsuite
+4). testgroup
+Solution :
+option [3] is correct
+Q. State True or False:
+
+Component based framework(CBF) is an hybrid Automation framework.
+1). TRUE
+2). FALSE
+Solution :
+option [1] is correct
+Q. Cucumber is a software tool that runs tests in _________ style.
+1). Test driven development
+2). Behavior driven development
+3). Documentation driven development
+4). All the options
+Solution :
+option [2] is correct
+Q. In Component based framework, what is 'Harness'?
+1). General purpose runner for executing component based test cases
+2). Execution gets triggered from here. Initializes the result logs, reports and initiates execution
+3). Reads data from centrally maintained data files at the module level
+4). Assembly of different combinations of components.
+Solution :
+option [1] is correct
+Q. Which framework is made up of components and aimed at optimizing test automation for 
+business critical applications?
+1). Table-Driven Framework
+2). Data-Driven Framework.
+3). Hybrid Automation Framework.
+4). Sprintest
+Solution :
+option [4] is correct
+Q. Which framework requires the development of data tables and keywords, independent 
+of the test automation tool?
+1). Table-Driven Framework
+2). Data-Driven Framework.
+3). Hybrid Automation Framework.
+4). Component based framework(CBF)
+Solution :
+option [1] is correct
+Q. Which provides continuous integration services for software development ?
+1). Cucumber
+2). Specflow
+3). Jenkins
+4). Ruby
+Solution :
+option [3] is correct
+Q. In Data-Driven Automation Framework, ___________ in the test case gets linked to database, 
+excel to fetch data.
+1). Framework method
+2). Parameter
+3). External method
+4). None of the options
+Solution :
+option [2] is correct
+Q. Which is a development methodology based on communication between the business customers, 
+the developers, and the testers?
+1). Test Driven Development (TDD)
+2). 
+Acceptance TDD
+3). Business Driven Development
+4). 
+Communication Driven Development
+Solution :
+option [2] is correct
+Q. Which is a development methodology based on communication between the business customers, 
+the developers, and the testers?
+1). Test Driven Development (TDD)
+2). 
+Acceptance TDD
+3). Business Driven Development
+4). 
+Communication Driven Development
+Solution :
+option [2] is correct
+Q. A framework is a hierarchical directory that encapsulates _______, __________, ___________ 
+in a single package.
+1). Dynamic shared library
+2). Image files
+3). Automation tools
+4). Reference documentation
+Solution :
+option [1,2,4] are correct
+Q. In which type of framework, data is not hardcoded with script ,but data is provided from 
+external  source?
+1). Keyword-Driven Automation Framework.
+2). Hybrid Automation Framework.
+3). Component based framework(CBF)
+4). Data-Driven Automation Framework
+Solution :
+option [4] is correct
+
+Q. Select the bindings in Selenium architecture:
+1). Java
+2). Internet Explorer
+3). Ruby
+4). Python
+Solution :
+option [1,3,4] are correct
+Q. When you want a crawler program that goes through different pages and collects data, 
+which browser you will select ?
+1). Phanthom JS
+2). Safari
+3). Internet Explorer
+4). Mozilla Firefox
+Solution :
+option [1] is correct

@@ -1,0 +1,485 @@
+Q. What are the Locatores are available in Page Object Model to identify an element on web page?
+1). By.className()
+2). By.cssSelector()
+3). By.xpath
+4). By.linkText()
+5). All of the Above
+Solution :
+option [5] is correct
+
+Q. Which of the followign code is correct to define loactors for elemnet in Page Object Model?
+1). By UN =By.id("username");
+2). UN =By.id("username");
+3). By UN =id("username");
+4). None of the above
+Solution :
+option [1] is correct
+
+Q. Complete the following: 
+
+_________ is a design pattern to create object repository for web UI elements.
+1). Page Factory
+2). Page Object Model
+3). TestNG Pattern
+4). All of the above
+Solution :
+option [2] is correct
+
+Q. Which of the following code is correct to create parameterized constructure to initialize 
+webdriver referance in Page Object Model?
+1). public class LoginPage {
+
+public LoginPage(WebDriver driver)
+{
+String driver =driver;
+}
+}
+
+2). public class LoginPage {
+WebDriver driver;
+public static void LoginPage(WebDriver driver)
+{
+this.driver =driver;
+}
+}
+
+3). public class LoginPage {
+WebDriver driver;
+public LoginPage(WebDriver driver)
+{
+this.driver =driver;
+}
+}
+
+4). public class LoginPage {
+
+public LoginPage()
+{
+this.driver =driver;
+}
+}
+
+Solution :
+option [3] is correct
+
+Q. What is the proper sequence of phases in Page Object Model Architecture?
+1). 1.Page Object Class
+2. Tests
+3. Selenium WebDriver
+4. Page
+
+2). 1. Page 
+2. Page Object Class
+3. Selenium WebDriver
+4. Tests
+
+3). 1. Page
+2. Tests
+3. Page Object Class
+4. Selenium WebDriver
+
+4). 1. Page
+2. Selenium webdriver
+3. Page Object Class
+4. Tests
+
+Solution :
+option [4] is correct
+
+Q. Identify the correct syntax to use @FindBy annotataion in Page Factory:
+1). " @FindBy(id="txtUserName")
+WebElement username;"
+
+2). " @FindBy("txtUserName")
+WebElement username;"
+
+3). " @FindBy(how=How.ID, using="txtUsername")
+WebElement username; "
+
+4). All of the above
+Solution :
+option [1,3] are correct
+
+Q. Which of the following statements are TRUE about Page Factory?
+
+1. Page Factory is an inbuilt page object model concept for Selenium WebDriver
+2. Page Factory can be used in any kind of framework such as Data Driven, Modular or Keyword Driven
+1). Both Statement 1 and 2 are TRUE
+2). Both Statement 1 and 2 are FALSE
+3). Statement 1 is TRUE
+Statement 2 is FALSE
+4). Statement 1 is FALSE
+Statement 2 is TRUE
+Solution :
+option [1] is correct
+
+Q. Which of the following is the correct code snipet to store the identified element
+(Username and password) in the class using Page factory?
+1). public class LoginPageFactory {	
+
+public LoginPageFactory(WebDriver driver)
+{
+this.driver =driver;
+}
+@FindBy(id="txtUserName")
+@CacheLookup 
+
+
+@FindBy(how=How.ID, using="txtPassword")
+@CacheLookup
+
+}
+
+2). public class LoginPageFactory {	
+WebDriver driver;
+public LoginPageFactory(WebDriver driver)
+{
+this.driver =driver;
+}
+@FindBy(id="txtUserName")
+@CacheLookup 
+WebElement username;
+
+@FindBy(how=How.ID, using="txtPassword")
+@CacheLookup
+WebElement password;
+}
+
+3). public class LoginPageFactory {	
+WebDriver driver;
+public LoginPageFactory(WebDriver driver)
+{
+this.driver =driver;
+}
+@FindBy()
+@CacheLookup 
+WebElement username;
+
+@FindBy()
+@CacheLookup
+WebElement password;
+}
+
+4). None of the above
+Solution :
+option [2] is correct
+
+Q. We mark Annotation @CacheLookup to WebElement to idicate that _________.
+1). the element will get store in cache memory
+2). the same instance in the DOM will always be used.
+3). the element on the web page we repitedly look for
+4). All of the above
+Solution :
+option [4] is correct
+
+Q. Which of the following keyword is being used to identify dynamic element on web page 
+in Page Factory?
+1). HOW
+2). BY
+3). FindElement
+4). All of the above
+Solution :
+option [1] is correct
+
+Q. What will be the output for below given code?
+
+public int TimeoutValue = 30;
+public SearchResultsPage(Webdriver driver)
+{ 
+    PageFactory.initElements(new 
+    AjaxElementLocatorFactory(driver, 
+    TimeoutValue), this);
+}
+1). The above code will wait for minimum of 30 seconds until the elements specified by 
+annotations is loaded. If the element is not found in the given time interval, 
+it will throw NoElementException exception
+
+2). The above code will wait for maximum of 30 seconds until the elements specified by 
+annotations is loaded. If the element is not found in the given time interval, 
+it will throw NoSuchElementException exception
+
+3). The above code will wait for maximum of 30 seconds until the elements specified by 
+annotations is loaded. If the element is found in the given time interval, 
+still it will throw NoSuchElementException exception
+
+4). None of the above
+Solution :
+option [2] is correct
+
+Q. What is JSON Protocol in Selenium WebDriver?
+1). Java Object Notation
+2). JavaScript Object Notation
+3). Java Script Oriented Notation
+4). None of the above
+Solution :
+option [2] is correct
+
+Q. Select the language which is NOT supported by the Selenium.
+1). ASP
+2). Java
+3). C#
+4). Ruby
+Solution :
+option [1] is correct
+Q. What are the 4 major components of Selenium WebDriver Architecture?
+1). 1. Selenium Language Bindings
+2.Selenium Server
+3. HTTP protocols
+4. Browser
+
+2). 1. Selenium Jar Files
+2. Eclipse Luna 
+3. Java Project
+4. Browser
+
+3). 1. Selenium Language Bindings
+2. JSON Wire Protocol
+3. Browser Driver
+4. Browsers
+
+4). All of the above
+Solution :
+option [3] is correct
+Q. What are NOT the advantages of Selenium WebDriver?
+1). 1. Supports all the browsers 
+2. Supports all the languages
+3. No need of any server for execution
+4. Faster execution 
+
+2). 1. Cannot Readily Support New Browsers
+2. no built-in command that automatically generates a Test Results File
+3. Have to rely on your IDE's output window
+4. Supports only web application Testing.
+
+3). 1. Open source tool
+2. no built-in command that automatically generates a Test Results File
+3. No need of any server for execution
+4. Supports only web application Testing
+
+4). None of the above
+Solution :
+option [2] is correct
+. Which of the following annotation code is correct in TestNg  to achieve parameterization?
+1). "@DataProvider(name="Testdata")
+public String getData()"
+
+2). "@DataProvider(name="Testdata")
+public Object[][] getData()"
+
+3). "@DataProvider()
+public Object[][] getData()"
+
+4). All of the above
+Solution :
+option [2] is correct
+Q. The following given statements are belongs to which unit framework?
+
+1. Linked as a Jar at compile time 
+2. for Java Programming launage
+3. supporting @ Ignore annotation
+1). TestNG Framework
+2). Junit Framework
+3). Nunit Framework
+4). Xunit Framework
+Solution :
+option [2] is correct
+Q. Which of the following statements are TRUE about TestNG over JUnit?
+
+1: In TestNG annotations are easy to understand over JUnit.
+2: TestNG enables grouping of test cases easily which is not possible in Junit.
+3: TestNG supports more additional annotations.
+1). Statement 1 & 2 are true
+Statement 3 is false
+2). All statements 1, 2 & 3 are true
+3). Statement 2 is true
+Statement 1 & 3 are false
+4). All statement 1,2 & 3 are false
+Solution :
+option [2] is correct
+Q. What are the annotations used in TestNG?
+1). @Test
+2). @BeforeSuite
+3). @AfterSuite
+4). @BeforeTest
+5). All of the Above
+Solution :
+option [5] is correct
+Q. Which of the following is not a JUnit Assertion?
+1). assertFalse()
+2). assertNull()
+3). assertNotEquals()
+4). assertNotSame()
+5). assertNotNull()
+6). assertNotTrue()
+Solution :
+option [3,6] are correct
+Q. Which of the following is the correct code to start a remorte chrome driver?
+1). WebDriver driver=new RemoteWebDriver("http://localhost:4444/wd/hub",DesiredCapabilities.Chrome());
+
+2). DesiredCapabilities capabilities=new DesiredCapabilities();
+capabilities.setPlatform(Platform.WINDOWS);
+capabilities.setBrowserName("chrome");
+WebDriver driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+
+3). WebDriver driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),DesiredCapabilities("Chrome"));
+
+4). All of the above
+
+5). None of the above
+
+Solution :
+option [2] is correct
+Q. Which method is used when you want to verify whether a certain check box, radio button, 
+or option in a drop-down box is selected in Web driver Selenium?
+1). selected()
+2). isSelect()
+3). isSelected()
+4). select()
+Solution :
+option [3] is correct
+Q. Consider the following code snippet:
+
+WebDriverWait wait = new WebDriverWait(driver, 30);
+wait.until(ExpectedConditions.presenceOfElementLocated(by));
+ 
+This is an example of an implicit wait.
+1). TRUE
+2). FALSE
+Solution :
+option [2] is correct
+Q. Select the variation which finds elements based on the driver's underlying CSS selector engine in 
+Web driver Selenium.
+1). By.cssSelected
+2). By.cssSelection
+3). By.cssSelector
+4). By.Selectcs
+Solution :
+option [3] is correct
+Q. Which WebDriver method is used to change focus to an alert, a frame or a browser window?
+1). changeFocus()
+2). setFocus()
+3). switchTo()
+4). changeTo()
+Solution :
+option [3] is correct
+Q. Which of the following code is the correct code to launch Google Chrome browser to run the test?
+1). System.setProperty("webdriver.chrome.driver", "path-to-browser-driver");
+WebDriver driver=new ChromeDriver();
+driver.get("http://www.demo.com/");
+2). System.setProperty("browser.chrome.driver", "path-to-browser-driver");
+WebDriver driver=new ChromeDriver();
+driver.get("http://www.demo.com/");
+3). System.setProperty("webdriver.chrome.driver", "path-to-browser-driver");
+ChromeDriver driver=new ChromeDriver();
+driver.get("http://www.demo.com/");
+4). System.setProperty("path-to-browser-driver","webdriver.chrome.driver");
+WebDriver driver=new ChromeDriver();
+driver.get("http://www.demo.com/");
+Solution :
+option [1] is correct
+Q. Consider the following HTML code snippet & predict the output.
+
+<table> 
+    <tr> 
+       <td>1</td>
+       <td>2</td>
+    </tr> 
+    <tr> 
+       <td>3</td> 
+       <td>4</td> 
+    </tr>
+ </table>
+
+driver.findElement(By.xpath("//table/tr[1]/td")).getText();
+1). The above statement returns 1
+2). The above statement returns 3
+3). The xpath query is incorrect
+4). webdriver statement is incorrect
+Solution :
+option [1] is correct
+Q. What is the Utility of Selenium Webdriver?
+1). It supports only Mozilla Firfox browser
+2). It needs Selenium server to execute the script
+3). It supports all the browsers including HTML Unit browser
+4). None of the above
+Solution :
+option [3] is correct
+Q. Select the component which is NOT part of Selenium suite.
+1). Selenium IDE
+2). Selenium RC
+3). Selenium Web
+4). Selenium Grid
+Solution :
+option [3] is correct
+Q. State TRUE or FALSE:
+
+Automated testing or test automation is a method in software testing that makes 
+use of special software tools to control the execution of tests and then compares 
+actual test results with predicted or expected results.
+1). TRUE
+2). FALSE
+Solution :
+option [1] is correct
+Q. Which of the following framework NOT used in software automation testing?
+1). 1-Data Driven Automation Framework
+2). 2-Method Driven Automation Framework
+3). 3-Modular Automation Framework
+4). 4-Keyword Driven Automation Framework
+5). Hybrid Automation Framework, its basically combination of different frameworks. (2+3+4)
+Solution :
+option [5] is correct
+Q. What does the term DOM refers to?
+1). Dynamic Object Model
+2). Document Object Model
+3). Data Object Model
+4). Document Flow Object Model
+Solution :
+option [2] is correct
+Q. Consider following code snippet and identify from given options which will highlight email textbox?
+
+<td>Email</td>
+<td>
+ <input id="email" class="inputtext" type="text" name="emailid">
+</td>
+1). css=input.email
+2). css=input#email
+3). css=email
+4). css=input-email
+Solution :
+option [2] is correct
+Q. Which command will enable the test case to be successful, after addition of a new element post page load?
+1). waitForElementPresent
+2). pause
+3). assertElementPresent
+4). verifyElementPresent
+Solution :
+option [1] is correct
+Q. Function libraries concept can not be implemented in Data Driven Framework. Is it right?
+1). Yes
+2). May be
+3). No
+4). Both (1) and (2)
+5). All of the Above
+Solution :
+option [3] is correct
+Q. What functionality does WebDriver support on browser cookies?
+1). Add and delete an individual cookie
+2). Delete all cookies
+3). Any of the above
+4). None of the above
+Solution :
+option [3] is correct
+Q. Which of the following is the correct code for identifying the no. of images available on web page?
+1). WebElement element=driver.findElements(By.tagname("img"));
+2). List<WebElement> linkElements = driver.findElements(By.tagName("img");
+3). WebElement element=driver.findElement(By.tagname("img"));
+4). None of the above
+Solution :
+option [2] is correct
+Q. Which of the following is correct syntex to launch Edge browser using WebDriver?
+1). WebDriver driver = new EdgeDriver();
+2). WebDriver driver = new edgedriver();
+3). WebDriver driver = new Driver();
+4). WebDriver driver = new EdgeDriverBrowser();
+Solution :
+option [1] is correct
